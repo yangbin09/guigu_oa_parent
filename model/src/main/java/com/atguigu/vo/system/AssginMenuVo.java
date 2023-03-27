@@ -7,6 +7,10 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * @author 阳斌
+ * @Data 2023/3/27 15:10
+ */
 @ApiModel(description = "分配菜单")
 @Data
 public class AssginMenuVo {

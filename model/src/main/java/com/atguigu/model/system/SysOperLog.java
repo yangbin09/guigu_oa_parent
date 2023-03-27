@@ -10,6 +10,9 @@ import lombok.EqualsAndHashCode;
 
 import java.util.Date;
 
+/**
+ * @author 阳斌
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "SysOperLog")

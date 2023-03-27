@@ -8,6 +8,9 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+/**
+ * @author 阳斌
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "岗位")

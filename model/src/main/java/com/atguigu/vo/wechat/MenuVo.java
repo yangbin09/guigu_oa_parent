@@ -6,7 +6,11 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.List;
-
+/**
+ * 菜单
+ * @author 阳斌
+ * @Data 2023/3/27 15:10
+ */
 @Data
 @ApiModel(description = "菜单")
 public class MenuVo {

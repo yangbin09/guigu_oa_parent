@@ -7,6 +7,9 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * @author 阳斌
+ */
 @Data
 @ApiModel(description = "Process")
 public class ProcessVo {

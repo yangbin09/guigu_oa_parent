@@ -10,6 +10,9 @@ import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
+/**
+ * @author 阳斌
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "用户")
@@ -60,10 +63,14 @@ public class SysUser extends BaseEntity {
 
 	@TableField(exist = false)
 	private List<SysRole> roleList;
-	//岗位
+	/**
+	 * 岗位
+	 */
 	@TableField(exist = false)
 	private String postName;
-	//部门
+	/**
+	 * 部门
+	 */
 	@TableField(exist = false)
 	private String deptName;
 }

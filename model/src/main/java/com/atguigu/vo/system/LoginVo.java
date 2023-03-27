@@ -3,6 +3,8 @@ package com.atguigu.vo.system;
 
 /**
  * 登录对象
+ * @author 阳斌
+ * @Data 2023/3/27 15:10
  */
 public class LoginVo {
 

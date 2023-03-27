@@ -10,6 +10,9 @@ import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
+/**
+ * @author 阳斌
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "菜单")
@@ -54,10 +57,14 @@ public class SysMenu extends BaseEntity {
 	@TableField("status")
 	private Integer status;
 
-	// 下级列表
+	/**
+	 * 下级列表
+	 */
 	@TableField(exist = false)
 	private List<SysMenu> children;
-	//是否选中
+	/**
+	 * 是否选中
+	 */
 	@TableField(exist = false)
 	private boolean isSelect;
 }

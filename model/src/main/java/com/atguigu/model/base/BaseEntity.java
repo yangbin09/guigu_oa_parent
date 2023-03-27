@@ -10,7 +10,10 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * @author 阳斌
+ * @Data 2023/3/27 15:10
+ */
 @Data
 public class BaseEntity implements Serializable {
 
@@ -22,8 +25,10 @@ public class BaseEntity implements Serializable {
 
     @TableField("update_time")
     private Date updateTime;
-
-    @TableLogic //逻辑删除
+    /**
+     * 逻辑删除
+     */
+    @TableLogic
     @TableField("is_deleted")
     private Integer isDeleted;
 

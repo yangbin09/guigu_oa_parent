@@ -10,6 +10,9 @@ import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
+/**
+ * @author 阳斌
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "部门")

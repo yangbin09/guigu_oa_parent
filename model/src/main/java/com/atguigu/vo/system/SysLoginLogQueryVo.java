@@ -3,6 +3,9 @@ package com.atguigu.vo.system;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+/**
+ * @author 阳斌
+ */
 @Data
 public class SysLoginLogQueryVo {
 	

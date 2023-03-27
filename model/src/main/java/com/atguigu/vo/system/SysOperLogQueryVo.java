@@ -2,6 +2,9 @@ package com.atguigu.vo.system;
 
 import lombok.Data;
 
+/**
+ * @author 阳斌
+ */
 @Data
 public class SysOperLogQueryVo {
 

@@ -7,7 +7,11 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-
+/**
+ * 菜单
+ * @author 阳斌
+ * @Data 2023/3/27 15:10
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "菜单")

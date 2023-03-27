@@ -2,9 +2,11 @@ package com.atguigu.vo.system;
 
 import lombok.Data;
 
+
 /**
  * 路由显示信息
- *
+ * @author 阳斌
+ * @Data 2023/3/27 15:10
  */
 @Data
 public class MetaVo
