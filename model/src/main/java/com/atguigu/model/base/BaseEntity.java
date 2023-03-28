@@ -31,7 +31,9 @@ public class BaseEntity implements Serializable {
     @TableLogic
     @TableField("is_deleted")
     private Integer isDeleted;
-
+    /**
+     * 用于存放查询条件
+     */
     @TableField(exist = false)
     private Map<String,Object> param = new HashMap<>();
 }
