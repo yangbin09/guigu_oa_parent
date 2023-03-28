@@ -1,6 +1,7 @@
 package com.atguigu.auth.controller;
 
 import com.atguigu.auth.service.SysRoleService;
+import com.atguigu.common.result.Result;
 import com.atguigu.model.system.SysRole;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,11 +27,13 @@ public class SysRoleController {
 
     /**
      * 测试查询所有角色
+     * @return 返回结果
      */
     @RequestMapping("/findAll")
-    public List<SysRole> findAll() {
+    public Result findAll() {
         //查询所有
-        return sysRoleService.list();
+        List<SysRole> roleList = sysRoleService.list();
+        return Result.ok(roleList);
     }
 
 }
