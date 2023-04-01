@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+<h1>hello world!</h1>
+<div>
+    <p>hello world!</p>
+</div>
+<script>
+    // 普通函数
+    let f1 = function (a) {
+        return a;
+    };
+    console.log("普通函数", f1(1));
+
+    // 箭头函数
+    let f11 = a => a;
+    console.log("箭头函数", f11(1));
+
+    // 普通函数 多个参数
+    let f2 = function (a, b) {
+        return a + b;
+    };
+    console.log("普通函数 多个参数", f2(1,4));
+
+    // 箭头函数 多个参数
+    let f22 = (a, b) => a + b;
+    console.log("箭头函数 多个参数",f22(1, 4));
+
+
+</script>
+</body>
+</html>

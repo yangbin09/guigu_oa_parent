@@ -2,11 +2,14 @@ package com.atguigu.common.handler;
 
 import com.atguigu.common.result.ResultCodeEnum;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * 自定义全局异常类
  *
+ * @author 阳斌
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class GuiguException extends RuntimeException {
 
@@ -16,8 +19,8 @@ public class GuiguException extends RuntimeException {
 
     /**
      * 通过状态码和错误消息创建异常对象
-     * @param code
-     * @param message
+     * @param code 状态码
+     * @param message 错误消息
      */
     public GuiguException(Integer code, String message) {
         super(message);
@@ -27,7 +30,7 @@ public class GuiguException extends RuntimeException {
 
     /**
      * 接收枚举类型对象
-     * @param resultCodeEnum
+     * @param resultCodeEnum 枚举类型对象
      */
     public GuiguException(ResultCodeEnum resultCodeEnum) {
         super(resultCodeEnum.getMessage());
@@ -35,11 +38,5 @@ public class GuiguException extends RuntimeException {
         this.message = resultCodeEnum.getMessage();
     }
 
-    @Override
-    public String toString() {
-        return "GuliException{" +
-                "code=" + code +
-                ", message=" + this.getMessage() +
-                '}';
-    }
+
 }
