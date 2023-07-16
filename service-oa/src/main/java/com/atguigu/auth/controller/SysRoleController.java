@@ -1,7 +1,6 @@
 package com.atguigu.auth.controller;
 
 import com.atguigu.auth.service.SysRoleService;
-import com.atguigu.common.handler.GuiguException;
 import com.atguigu.common.result.Result;
 import com.atguigu.model.system.SysRole;
 import com.atguigu.vo.system.SysRoleQueryVo;
@@ -42,8 +41,7 @@ public class SysRoleController {
     @ApiOperation(value = "查询所有角色")
     @GetMapping("findAll")
     public Result findAll() {
-        //查询所有
-
+        //查询所有角色
         List<SysRole> roleList = sysRoleService.list();
 
         return Result.ok(roleList);
